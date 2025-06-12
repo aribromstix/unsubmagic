@@ -36,6 +36,7 @@ const Popup: React.FC = () => {
   return (
     <div style={{ padding: '16px', width: '300px' }}>
       <h1 style={{ fontSize: '18px', marginBottom: '12px' }}>UnsubMagic</h1>
+      <p>Znaleziono {links.length} linków</p>
       {!isConnected ? (
         <button onClick={connectMailbox}>Connect mailbox</button>
       ) : (
