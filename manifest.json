@@ -4,10 +4,8 @@
   "version": "0.1.0",
   "description": "Quickly unsubscribe from all newsletters in one click",
   "permissions": [
-    "identity",
-    "storage",
-    "activeTab",
-    "tabs"
+    "tabs",
+    "activeTab"
   ],
   "host_permissions": [
     "https://mail.google.com/*",
@@ -19,9 +17,7 @@
         "https://mail.google.com/*",
         "https://outlook.office.com/*"
       ],
-      "js": [
-        "content_script.js"
-      ],
+      "js": ["content_script.js"],
       "all_frames": true
     }
   ],
