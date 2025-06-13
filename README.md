@@ -1,3 +1,6 @@
-## Sign up for beta
-[Leave your email here](LINK)
-and receive installation instructions for UnsubMagic
+## Sign up for the beta
+
+Send email to
+**[beta@unsubmagic.com](mailto:beta@unsubmagic.com**
+with subject 'UnsubMagic Beta' and I will send you the bookmarklet
+and quick start guide.
