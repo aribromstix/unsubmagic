@@ -1,9 +1,8 @@
-// © 2025 UnsubMagic. Licensed under the MIT License.
 (() => {
   const links = [];
   document.querySelectorAll('a').forEach(a => {
-    const text = (a.textContent || '').toLowerCase();
-    if (text.includes('unsubscribe')) {
+    const txt = (a.textContent || '').toLowerCase();
+    if (txt.includes('unsubscribe')) {
       links.push(a.href);
     }
   });
