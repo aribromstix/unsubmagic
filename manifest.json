@@ -3,11 +3,32 @@
   "name": "UnsubMagic",
   "version": "0.1.0",
   "description": "Quickly unsubscribe from all newsletters in one click",
-  "permissions": ["identity", "storage", "activeTab"],
+  "permissions": [
+    "identity",
+    "storage",
+    "activeTab",
+    "tabs"
+  ],
   "host_permissions": [
     "https://mail.google.com/*",
     "https://outlook.office.com/*"
   ],
-  "background": { "service_worker": "background.js" },
-  "action": { "default_popup": "index.html" }
+  "content_scripts": [
+    {
+      "matches": [
+        "https://mail.google.com/*",
+        "https://outlook.office.com/*"
+      ],
+      "js": [
+        "content_script.js"
+      ],
+      "all_frames": true
+    }
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html"
+  }
 }
